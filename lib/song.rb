@@ -1,4 +1,4 @@
-require 'pry' 
+require 'pry'
 class Song
 
 attr_accessor :name, :artist, :genre
@@ -31,7 +31,7 @@ end
 
 def self.genre_count
   genre_hash = {}
-  binding.pry
+  #binding.pry
   @@genres.each do |each_genre|
     if !genre_hash[each_genre] 
     genre_hash[each_genre] = 1
