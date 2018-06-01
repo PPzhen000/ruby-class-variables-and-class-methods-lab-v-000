@@ -30,9 +30,15 @@ end
 
 def self.genre_count
   genre_hash = {}
-  @@genres.uniq.map {|x| genre_hash[x] = 0}
-  #genre_hash = @@genres.map do |each_song|
-
+  @@genres.uniq.each do |x|
+    genre_hash[x] = 0
+    @@genres.map do |each_song|
+      if each_song = x 
+        genre_hash[x] += 1
+      end 
+    end
+  end 
+  
   genre_hash
 
 end
