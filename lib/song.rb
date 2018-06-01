@@ -1,3 +1,4 @@
+require pry 
 class Song
 
 attr_accessor :name, :artist, :genre
@@ -30,7 +31,7 @@ end
 
 def self.genre_count
   genre_hash = {}
-
+  binding.pry
   @@genres.each do |each_genre|
     if !@@genres.include?(each_genre)
     genre_hash[each_genre] = 1
