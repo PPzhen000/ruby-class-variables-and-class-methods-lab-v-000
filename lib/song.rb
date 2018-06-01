@@ -33,7 +33,7 @@ def self.genre_count
 
   @@genres.each do |each_genre|
     if !@@genres.include?(each_genre)
-    genre_hash[each_genre] = 0
+    genre_hash[each_genre] = 1
     else
     genre_hash[each_genre] += 1
     end
