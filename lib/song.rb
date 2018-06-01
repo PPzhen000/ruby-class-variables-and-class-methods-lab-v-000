@@ -12,8 +12,8 @@ def initialize(name, artist, genre)
   @genre = genre
 
   @@count += 1
-  @@genres << genre if !@@genres.include?(genre)
-  @@artists << artist if !@@artists.include?(artist)
+  @@genres << genre #if !@@genres.include?(genre)
+  @@artists << artist #if !@@artists.include?(artist)
 end
 
 def count
@@ -34,7 +34,7 @@ end
 
 def artist_count
 
-end 
+end
 
 
 
