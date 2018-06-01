@@ -35,7 +35,7 @@ def self.genre_count
     if !@@genres.include?(each_genre)
     genre_hash[each_genre] = 1
     else
-    genre_hash[each_genre] =+ 1
+    genre_hash[each_genre] = genre_hash[each_genre] + 1
     end
   end
 
